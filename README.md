@@ -1,4 +1,4 @@
-# Rocket Academy Coding Bootcamp: Clock
+# Rocket Academy Coding Bootcamp: World Clock
 
 TODO: link to exercise page
 
