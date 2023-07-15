@@ -1,10 +1,6 @@
 import React from 'react';
-import logo from './logo.png';
-import './App.css';
-import './Clock';
-import Clock from './Clock';
 
-class App extends React.Component {
+class Clock extends React.Component {
 	constructor(props) {
 		super(props);
 		// Initialise component state to contain "date" attribute with current date and time
@@ -24,16 +20,12 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div className='App'>
-				<header className='App-header'>
-					<img src={logo} className='App-logo' alt='logo' />
-					<Clock timeZone='America/Los_Angeles' />
-					<Clock timeZone='Europe/London' />
-					<Clock timeZone='Europe/Berlin' />
-				</header>
-			</div>
+			<p>{`${this.props.timeZone}:
+		${this.state.date.toLocaleString('en-GB', {
+			timeZone: this.props.timeZone,
+		})}`}</p>
 		);
 	}
 }
 
-export default App;
+export default Clock;
