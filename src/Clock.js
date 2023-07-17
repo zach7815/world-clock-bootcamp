@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { controlclassName } from './bgColor';
 class Clock extends React.Component {
 	constructor(props) {
 		super(props);
@@ -20,11 +20,18 @@ class Clock extends React.Component {
 
 	render() {
 		return (
-			<p>{`${this.props.timeZone}:
-		${this.state.date.toLocaleString('en-GB', {
-			timeZone: this.props.timeZone,
-		})}`}</p>
+			<p>
+				<span className='timezones'>{this.props.timeZone}</span>:
+				{this.state.date.toLocaleString('en-GB', {
+					timeZone: this.props.timeZone,
+				})}
+			</p>
 		);
+	}
+
+	componentDidUpdate() {
+		const timezones = document.querySelectorAll('.timezones');
+		controlclassName(Array.from(timezones));
 	}
 }
 
