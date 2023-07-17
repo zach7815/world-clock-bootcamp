@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/world-clock-bootcamp/static/css/main.ef067032.css",
+    "main.js": "/world-clock-bootcamp/static/js/main.c390c48c.js",
+    "index.html": "/world-clock-bootcamp/index.html",
+    "main.ef067032.css.map": "/world-clock-bootcamp/static/css/main.ef067032.css.map",
+    "main.c390c48c.js.map": "/world-clock-bootcamp/static/js/main.c390c48c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef067032.css",
+    "static/js/main.c390c48c.js"
+  ]
+}
