@@ -3,7 +3,7 @@
 // if the timezone is before midday- set bg early morning color
 // grab the span for each timezone string
 
-export const controlclassName = (elements) => {
+export const controlClassName = (elements) => {
 	elements.forEach((timezone) => {
 		// Extract the timezone string from the span element
 		const timezoneName = timezone.textContent;
@@ -45,5 +45,3 @@ export const controlclassName = (elements) => {
 		timezone.parentElement.classList.add(className);
 	});
 };
-
-export default controlclassName;
